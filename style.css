@@ -1,0 +1,102 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(29, 4, 29, 0.836);
+
+}
+nav.menu-lateral{
+    width: 60px;
+    height: 100%;
+    background-color: #202020;
+    position: fixed; /* Mantém o nav fixo na tela */
+    top: 0; /* Alinha o topo do nav com o topo da tela */
+    left: 0; 
+    padding: 40px 0 40px 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 3px 0 0 #ff0077;
+    position: fixed;
+    overflow: hidden;
+}
+nav.menu-lateral:hover{
+    width: 300px;
+  transition: .2s;
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+.btn-expandir > i {
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+   
+}
+ul li.item-menu:hover{
+    background-color: #ff0077;
+  
+}
+ul li.item-menu a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+   margin-left: 0;
+}
+ul li.item-menu a .txt-link{
+margin-left: 30px;
+}
+
+ul li.item-menu a .icon{
+    font-size: 30px;
+   
+    }
+
+hr{
+    width: 500px;
+}
+#titulo{
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-top: 5%;
+}
+#imagens {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 20%;
+    margin-right: 100px;
+}
+#imagens img {
+    width: 80%; /* Define o tamanho das imagens */
+    display: inline-block; /* Permite que as imagens fiquem uma ao lado da outra */
+    margin-right: 10px; /* Adiciona um espaçamento entre as imagens */
+    height: 300px;
+
+}
+.imagem-container img{
+    margin: 0 auto; /* Centraliza horizontalmente as imagens */
+    display: block; /* Garante que as imagens não tenham espaçamento extra abaixo */
+}
+
+.imagem-container h2 {
+    margin-top: 0; /* Remove o espaçamento superior padrão do título */
+    color: white; /* Cor do texto do título */
+    margin-top: 12%;
+    text-align: center;
+}
+#imagens img:hover{
+    width: 100%;
+    position: relative; /* Mantém a imagem no mesmo lugar */
+    z-index: 2; /* Garante que a imagem aumentada esteja acima das outras */
+}
